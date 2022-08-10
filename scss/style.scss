@@ -4,3 +4,8 @@
     box-sizing: border-box;
     font-family: "Anek Malayalam", sans-serif;
   }
+  @import"./utilities/variables";
+  @import "./layout/header";
+  @import "./layout/main";
+  @import "./layout/footer";
+  @import "./layout/media";
