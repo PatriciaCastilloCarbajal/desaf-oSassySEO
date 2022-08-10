@@ -1,17 +1,10 @@
 
 /*Primero se declara mixin antes de incorporarlo*/
 
-@mixin medidas ($width, $height, $padding, $margin) {
+@mixin medidas ($width, $height,) {
     width: $width;
     height: $height;
-    padding: $padding;
-    margin: $margin;
 }
 
 
-// @mixin medidas  {
-//     width: 100px;
-//     height: 200px;
-//     padding: 100px;
-//     margin: 10px;
-// }
+
