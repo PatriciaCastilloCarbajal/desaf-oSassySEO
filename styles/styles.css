@@ -146,3 +146,18 @@ footer .redes.p {
     display: block; }
   .redes {
     display: block; } }
+
+/*Primero se declara mixin antes de incorporarlo*/
+/* extends*/
+/* h2{
+    font-size: 20px;
+    color: blue;
+    background-color: lightcoral;
+}
+h3{
+    @extend h2;
+    font-size: 20px;
+}
+p{
+    @extend h3;
+} */
