@@ -106,7 +106,7 @@ main .banner img {
 }
 
 .centrarMain {
-  min-height: calc(100vh-309px);
+  min-height: calc(100vh-372px);
   text-align: center;
   padding-bottom: 3rem;
 }
@@ -114,6 +114,7 @@ main .banner img {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+
 .centrarMain img:hover {
   transform: scale(1.5);
 }
