@@ -80,6 +80,7 @@ header .barraNav ul li a {
 }
 
 /*Estilos del main*/
+
 main {
   background-color: #ac7d88;
   /*Esto lo uso como variable*/
@@ -106,7 +107,7 @@ main .banner img {
 }
 
 .centrarMain {
-  min-height: calc(100vh-372px);
+  /* min-height: calc(100vh- 372px); */
   text-align: center;
   padding-bottom: 3rem;
 }
@@ -115,8 +116,20 @@ main .banner img {
   margin-bottom: 1rem;
 }
 
+.centrarMainNewIn {
+  min-height: calc(100vh - 372px);
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
 .centrarMain img:hover {
   transform: scale(1.5);
+}
+
+/* Este es uno de los últimos cambios que hice */
+.mediosdePago {
+  display: grid;
+  gap: 15px;
 }
 
 .grillaPrincipal {
@@ -124,6 +137,46 @@ main .banner img {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
 }
+
+/* Esta es una de las últimas modificaciones :áreas*/
+header {
+  grid-area: header;
+}
+
+.barraNavPrimera {
+  grid-area: nav1;
+}
+
+.container-fluid {
+  grid-area: nav2;
+}
+main {
+  grid-area: main;
+}
+.container {
+  grid-area: container;
+}
+.seccionColeccionesIndex {
+  grid-area: seccionColecciones;
+}
+footer {
+  grid-area: footer;
+}
+/*  hasta ahi declaré las áreas */
+
+/* acomodar por áreas */
+.grillaPrincipal {
+  grid-template-areas:
+    "header"
+    "nav1"
+    "nav2"
+    "main"
+    "container"
+    "seccionColecciones"
+    "footer";
+}
+/*  */
+
 .grillaPrincipal img {
   place-self: center;
   object-fit: cover;
@@ -152,13 +205,30 @@ footer .redes {
 footer .icon {
   width: 48px;
   height: 48px;
+  margin-bottom: 15px;
 }
 
-footer .redes.p {
+footer .redes .p {
   padding-top: 25px;
 }
 
 /*Media queries */
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .grillaPrincipal {
+    margin: 0;
+    grid-template-areas:
+      "header"
+      "nav1"
+      "nav2"
+      "main"
+      "container"
+      "seccionColecciones"
+      "footer";
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .grillaPrincipal {
     display: grid;
